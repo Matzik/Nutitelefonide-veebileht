@@ -1,0 +1,121 @@
+body{
+    margin: 0;
+    font-size: 25px;
+}
+/* ÜLEMINE NAVIGATSIOONI RIBA CSS */
+.third-level-top-navigation{
+    position: absolute;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+}
+
+.third-level-top-navigation > li {
+    height: 60px;
+    background: #333;
+    text-align: center;
+}
+
+.third-level-top-navigation > li:hover { 
+    background: #000000; 
+}
+
+.second-level-top-navigation {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 200px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+}
+
+.second-level-top-navigation > li {
+    position: relative;
+    text-align: center;
+    height: 60px;
+    background: #333;
+}
+
+.second-level-top-navigation > li:hover { 
+    background: #000000; 
+}
+
+.first-level-top-navigation {
+    list-style: none;
+    padding: 0;
+    margin-top: 0;
+    margin: 0;
+}
+
+.first-level-top-navigation a  {   
+    color: #FFFFFF;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    line-height: 60px;
+}
+
+.first-level-top-navigation > li {
+    position: relative;
+    float: left;
+    height: 60px;
+    width: 200px;
+    background: #333;
+}
+
+.first-level-top-navigation > li:hover {
+    background: #000000; 
+}
+
+.first-level-top-navigation li:hover > ul {
+    display: inline-block;
+}
+
+.first-level-top-navigation a:hover { 
+    color: #FFFFFF; 
+}
+
+.top-navigation {
+    background-color: #333;position: fixed; width: 100%; height: 60px;margin-top: 0px ; list-style: none;
+}
+/* KESKMINE SISU CSS */
+.image{
+    display: none;
+    margin-top: 60px;
+}
+
+.main_content{
+    text-align: center;
+    padding: 60px;
+}
+
+.main_content h1{
+    text-align: center;
+}
+
+.main_content p{
+    text-align: justify;
+    background-color: #fdfdfd;
+    padding: 50px;
+    border-radius: 25px;
+    margin-left: 120px;
+    margin-right: 120px;
+    margin-bottom: 600px;
+    
+}
+/* ALUMINE NAVIGATSIOONI RIBA CSS */
+.bot-navigation {
+    background-color: #333; position: fixed;width: 100%; bottom: 0; margin: 0;
+}
+
+.bot-navigation p{
+    text-align: center;
+    color: #FFFFFF;
+}
+
