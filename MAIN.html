@@ -3,17 +3,19 @@
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="MAIN.CSS">
+        <script type="text/javascript" src="MAIN.JS"></script>
     </head>
     <body>
+
         <!--PEALMINE NAVIGATSIOONI RIBA-->
         <div class="top-navigation">
             <ul class="first-level-top-navigation">
-                <li><a href="#">Home</a></li>
+                <li><a href="#">Koduleht</a></li>
                 <li><a href="#">IPhone</a>
                     <ul class="second-level-top-navigation">
-                        <li><a href="#">IPhone 13</a></li>
-                        <li><a href="#">IPhone 13 Pro</a></li>
-                        <li><a href="#">IPhone 13 Max</a></li>
+                        <li><a href="#">IPhone 7</a></li>
+                        <li><a href="#">IPhone 7</a></li>
+                        <li><a href="#">IPhone 7</a></li>
                     </ul>
                 </li>
                 <li><a href="#">Android</a>
@@ -22,62 +24,101 @@
                             <a href="#">Xiaomi</a>
                             <ul class="third-level-top-navigation">
                                 <li><a href="#">Xiaomi Mi 11</a></li>
-                                <li><a href="#">Xiaomi Mi 11 Lite</a></li>
-                                <li><a href="#">Xiaomi Mi 11 Pro</a></li>
+                                <li><a href="#">Xiaomi Mi 11</a></li>
+                                <li><a href="#">Xiaomi Mi 11</a></li>
                             </ul>
                         </li>
                     </ul>
                 </li>
-                <li><a href="#">Contacts</a></li>
+                <li><a href="#">Kontaktid</a></li>
             </ul>
         </div>
-        
+
         <!--LEHE KESKMINE OSA PILDID JA TEKST-->
         <div class="main_content">
+            <div class="picture-container">
 
-            <div class="images">
-                <div class="image">
-                    <img src="CM1.png" alt="IMG1">
+                <!--PILDID MATERJALID: https://www.w3schools.com/howto/howto_js_imageshow.asp-->
+                <div class="picture">
+                    <img src="./PICTURES/CM1.png" style="width:100%">
                 </div>
-                <div class="image">
-                    <img src="CM2.png" alt="IMG1">
+                  
+                <div class="picture">
+                    <img src="./PICTURES/CM2.png" style="width:100%">
                 </div>
-                <div class="image">
-                    <img src="CM3.png" alt="IMG1">
+                  
+                <div class="picture">
+                    <img src="./PICTURES/CM3.png" style="width:100%">
                 </div>
+
+                <a class="prev" onclick="plusImages(-1)">&#10094;</a>
+                <a class="next" onclick="plusImages(1)">&#10095;</a>
             </div>
 
-            <script>
-                var imageIndex = 0;
-                showImages();
-                
-                function showImages(){
-                    var i;
-                    var images = document.getElementsByClassName("image");
-                    for(i=0; i<images.length; i++){
-                        images[i].style.display = "none";
-                    }
-                    imageIndex ++;
-                    if(imageIndex > images.length){
-                        imageIndex = 1;
-                    }
-                    images[imageIndex-1].style.display = "block";
-                    setTimeout(showImages, 4000);
-                }
-            </script>
+            <div style="text-align:center">
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+            </div>
 
+            <script>showImages()</script>>
+
+            <!--LEHE SISUTEKST-->
             <div>
-                <h1>Meie eesmärk!</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Id volutpat lacus laoreet non curabitur gravida. Cursus mattis molestie a iaculis at erat pellentesque. Nibh nisl condimentum id venenatis a condimentum vitae sapien. Erat velit scelerisque in dictum. Sagittis eu volutpat odio facilisis mauris sit amet massa. Sed nisi lacus sed viverra. Ornare quam viverra orci sagittis. Diam quis enim lobortis scelerisque fermentum dui faucibus in. Vitae sapien pellentesque habitant morbi tristique senectus et netus et. Mauris nunc congue nisi vitae suscipit. Ac tortor dignissim convallis aenean et. Quis enim lobortis scelerisque fermentum dui faucibus in ornare. Tempus quam pellentesque nec nam. Quisque non tellus orci ac. Sit amet purus gravida quis blandit turpis cursus in. Interdum velit laoreet id donec ultrices tincidunt. Enim nunc faucibus a pellentesque sit amet. Augue ut lectus arcu bibendum at varius vel. Leo in vitae turpis massa sed.
+                <h1>Lorem Ipsum!</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Id volutpat lacus laoreet non curabitur gravida. Cursus mattis molestie a iaculis at erat pellentesque. Nibh nisl condimentum id venenatis a condimentum vitae sapien. Erat velit scelerisque in dictum. Sagittis eu volutpat odio facilisis mauris sit amet massa. Sed nisi lacus sed viverra. Ornare quam viverra orci sagittis. Diam quis enim lobortis scelerisque fermentum dui faucibus in. Vitae sapien pellentesque habitant morbi tristique senectus et netus et. Mauris nunc congue nisi vitae suscipit. Ac tortor dignissim convallis aenean et. Quis enim lobortis scelerisque fermentum dui faucibus in ornare. Tempus quam pellentesque nec nam. Quisque non tellus orci ac. Sit amet purus gravida quis blandit turpis cursus in. Interdum velit laoreet id donec ultrices tincidunt. Enim nunc faucibus a pellentesque sit amet. Augue ut lectus arcu bibendum at varius vel. Leo in vitae turpis massa sed.
                     Lectus quam id leo in vitae. Consequat semper viverra nam libero justo laoreet sit. Fames ac turpis egestas integer eget. Sagittis id consectetur purus ut faucibus pulvinar elementum. Pretium fusce id velit ut tortor pretium viverra suspendisse potenti. Diam sit amet nisl suscipit adipiscing. Aliquet sagittis id consectetur purus ut faucibus pulvinar elementum. Aliquet sagittis id consectetur purus ut faucibus pulvinar elementum integer. In hac habitasse platea dictumst. Amet mauris commodo quis imperdiet. Posuere morbi leo urna molestie at elementum eu. Phasellus faucibus scelerisque eleifend donec pretium vulputate sapien. In mollis nunc sed id semper risus in hendrerit gravida.
                 </p>
             </div>
-        </div>
-        <!--ALUMINE NAVIGATSIOONI RIBA-->
 
+            <!--POUPLAARSED TOOTED-->
+            <div class="more_products">
+                <h1>Populaarsed tooted</h1>
+                <div id="outbox">
+                    <div id="innerbox">
+                        <img src="./PICTURES/P1.png" style="width: 300px; height: 300px;margin-top: 30px;">
+                        <h3>IPhone 7</h3>
+                        <button>Vaata toodet!</button>
+                    </div>
+                </div>
+
+                <div id="outbox">
+                    <div id="innerbox">
+                        <img src="./PICTURES/P2.png" style="width: 300px; height: 300px; margin-top: 30px;">
+                        <h3>IPhone 7</h3>
+                        <button>Vaata toodet!</button>
+                    </div>
+                </div>
+
+
+                <div id="outbox">
+                    <div id="innerbox">
+                        <img src="./PICTURES/P3.png" style="width: 300px; height: 300px;margin-top: 30px;">
+                        <h3>IPhone 7</h3>
+                        <button>Vaata toodet!</button>
+                    </div>
+                </div>
+
+            </div>
+
+            
+
+
+        </div>
+
+        <!--ALUMINE NAVIGATSIOONI RIBA-->
         <div class="bot-navigation">
-            <p>Oleme avatud E-N 9:00-20:00</p>
+            <div><p></p></div>
+            <div><p>Kauplus on avatud E-N 09:00-18:00</p></div>
+
+            <div>
+                <a href="https://youtu.be/BKMRcpYURus"><img src="email.png"></a>
+                <a href="https://youtu.be/BKMRcpYURus"><img src="facebook.png"></a>
+            </div>
+            
         </div>
 
     </body>
+
 </html>
