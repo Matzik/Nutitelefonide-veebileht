@@ -167,10 +167,10 @@ body{
     font-size: 16px;
 }
 
-#outbox{
+.outbox{
     float:left; width: 26%; margin-left: 100px;
 }
-#innerbox{
+.innerbox{
     min-width: 30%;padding: 15px; border-radius: 25px; margin-right: 5px;margin-left: 5px; 
 }
 
