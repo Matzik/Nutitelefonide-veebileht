@@ -7,7 +7,7 @@ body{
 
 /* ÜLEMINE NAVIGATSIOONI RIBA CSS */
 .third-level-top-navigation{
-    position: absolute;
+    position: fixed;
     top: 0;
     right: -200px;
     width: 200px;
@@ -28,7 +28,7 @@ body{
 }
 
 .second-level-top-navigation {
-    position: absolute;
+    position: fixed;
     top: 60px;
     left: 0;
     width: 200px;
@@ -244,6 +244,7 @@ body{
     padding: 10px;
 }
 
+<<<<<<< HEAD
 /* EMAIL SAATMISE AKEN KASUTATUD MATERJALID: https://www.w3schools.com/howto/howto_js_popup_form.asp*/
 
 .open-button {
@@ -306,3 +307,16 @@ textarea{
 
 
 
+=======
+.button {
+    font: bold 11px Arial;
+    text-decoration: none;
+    background-color: #EEEEEE;
+    color: #333333;
+    padding: 6px 18px 6px 18px;
+    border-top: 1px solid #CCCCCC;
+    border-right: 1px solid #333333;
+    border-bottom: 1px solid #333333;
+    border-left: 1px solid #CCCCCC;
+  }
+>>>>>>> 6578530c9c6f2f743b05931cd223d8644f4cbd0c
