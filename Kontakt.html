@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="MAIN.CSS">
+    <script src="MAIN.JS"></script>
+</head>
+
+<body>
+
+  <div class="top-navigation">
+    <ul class="first-level-top-navigation">
+        <li><a href="MAIN.html">Koduleht</a></li>
+        <li><a href="Iphone.html">IPhone</a>
+            <ul class="second-level-top-navigation">
+                <li><a href="Iphone.html">IPhone 7</a></li>
+                <li><a href="Iphone.html">IPhone 8</a></li>
+                <li><a href="Iphone.html">IPhone XS</a></li>
+            </ul>
+        </li>
+        <li><a href="Android.html">Android</a>
+            <ul class="second-level-top-navigation">
+                <li>
+                    <a href="Android.html">Xiaomi</a>
+                    <ul class="third-level-top-navigation">
+                        <li><a href="Android.html">Xiaomi Mi 11</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><a href="Kontakt.html">Kontaktid</a></li>
+    </ul>
+</div>
+
+
+<link href="contact-form.css" rel="stylesheet">
+
+<div class="fcf-body">
+
+    <div id="fcf-form">
+      <br>
+      <br>
+    <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
+        
+        <div class="fcf-form-group">
+            <label for="Name" class="fcf-label">Nimi</label>
+            <div class="fcf-input-group">
+                <input type="text" id="Name" name="Name" class="fcf-form-control" required>
+            </div>
+        </div>
+
+        <div class="fcf-form-group">
+            <label for="Email" class="fcf-label">Email</label>
+            <div class="fcf-input-group">
+                <input type="email" id="Email" name="Email" class="fcf-form-control" required>
+            </div>
+        </div>
+
+        <div class="fcf-form-group">
+            <label for="Message" class="fcf-label">Sõnum</label>
+            <div class="fcf-input-group">
+                <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
+            </div>
+        </div>
+
+        <div class="fcf-form-group">
+            <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Saada Sõnum</button>
+        </div>
+
+    </form>
+    </div>
+
+</div>
+
+</body>
+</html>

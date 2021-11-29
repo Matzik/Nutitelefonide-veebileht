@@ -7,7 +7,7 @@ body{
 }
 /* ÜLEMINE NAVIGATSIOONI RIBA CSS */
 .third-level-top-navigation{
-    position: absolute;
+    position: fixed;
     top: 0;
     right: -200px;
     width: 200px;
@@ -28,7 +28,7 @@ body{
 }
 
 .second-level-top-navigation {
-    position: absolute;
+    position: fixed;
     top: 60px;
     left: 0;
     width: 200px;
@@ -201,7 +201,7 @@ body{
     text-decoration: none;
     background-color: #EEEEEE;
     color: #333333;
-    padding: 2px 6px 2px 6px;
+    padding: 6px 18px 6px 18px;
     border-top: 1px solid #CCCCCC;
     border-right: 1px solid #333333;
     border-bottom: 1px solid #333333;
