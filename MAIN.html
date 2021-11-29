@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Nutitelefonide Veebileht</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="./MAIN.css">
+        <script src="MAIN.JS"></script>
+    </head>
+    <body>
+
+        <!--PEALMINE NAVIGATSIOONI RIBA-->
+        <div class="top-navigation">
+            <ul class="first-level-top-navigation">
+                <li><a href="MAIN.html">Koduleht</a></li>
+                <li><a href="#">IPhone</a>
+                    <ul class="second-level-top-navigation">
+                        <li><a href="Iphone.html">IPhone 7</a></li>
+                        <li><a href="Iphone.html">IPhone 8</a></li>
+                        <li><a href="Iphone.html">IPhone XS</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Android</a>
+                    <ul class="second-level-top-navigation">
+                        <li>
+                            <a href="#">Xiaomi</a>
+                            <ul class="third-level-top-navigation">
+                                <li><a href="Android.html">Xiaomi Mi 11</a></li>
+                                <li><a href="Android.html">Xiaomi Mi 11</a></li>
+                                <li><a href="Android.html">Xiaomi Mi 11</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="Kontakt.html">Kontaktid</a></li>
+            </ul>
+        </div>
+
+        <!--LEHE KESKMINE OSA PILDID JA TEKST-->
+        <div class="main_content">
+            <div class="picture-container">
+
+                <!--PILDID MATERJALID: https://www.w3schools.com/howto/howto_js_imageshow.asp-->
+                <div class="picture">
+                    <img src="./PICTURES/CM1.png" style="width:100%;" alt="Image1" >
+                </div>
+                  
+                <div class="picture">
+                    <img src="./PICTURES/CM2.png" style="width:100%;" alt="Image2">
+                </div>
+                  
+                <div class="picture">
+                    <img src="./PICTURES/CM3.png" style="width:100%;" alt="Image3" >
+                </div>
+
+                <a class="prev" onclick="plusImages(-1)">&#10094;</a>
+                <a class="next" onclick="plusImages(1)">&#10095;</a>
+            </div>
+
+            <div style="text-align:center">
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+            </div>
+
+            <script>showImages()</script>
+
+            <!--LEHE SISUTEKST-->
+            <div id= "aboutText">
+                <h1>Lorem Ipsum!</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Id volutpat lacus laoreet non curabitur gravida. Cursus mattis molestie a iaculis at erat pellentesque. Nibh nisl condimentum id venenatis a condimentum vitae sapien. Erat velit scelerisque in dictum. Sagittis eu volutpat odio facilisis mauris sit amet massa. <span id="dots">...</span><span id="more">Sed nisi lacus sed viverra. Ornare quam viverra orci sagittis. Diam quis enim lobortis scelerisque fermentum dui faucibus in. Vitae sapien pellentesque habitant morbi tristique senectus et netus et. Mauris nunc congue nisi vitae suscipit. Ac tortor dignissim convallis aenean et. Quis enim lobortis scelerisque fermentum dui faucibus in ornare. Tempus quam pellentesque nec nam. Quisque non tellus orci ac. Sit amet purus gravida quis blandit turpis cursus in. Interdum velit laoreet id donec ultrices tincidunt. Enim nunc faucibus a pellentesque sit amet. Augue ut lectus arcu bibendum at varius vel. Leo in vitae turpis massa sed.
+                    Lectus quam id leo in vitae. Consequat semper viverra nam libero justo laoreet sit. Fames ac turpis egestas integer eget. Sagittis id consectetur purus ut faucibus pulvinar elementum. Pretium fusce id velit ut tortor pretium viverra suspendisse potenti. Diam sit amet nisl suscipit adipiscing. Aliquet sagittis id consectetur purus ut faucibus pulvinar elementum. Aliquet sagittis id consectetur purus ut faucibus pulvinar elementum integer. In hac habitasse platea dictumst. Amet mauris commodo quis imperdiet. Posuere morbi leo urna molestie at elementum eu. Phasellus faucibus scelerisque eleifend donec pretium vulputate sapien. In mollis nunc sed id semper risus in hendrerit gravida.
+                    </span>
+                </p>
+                <button onclick="readMore()" id="roundedButton">Loe Rohkem!</button>
+            </div>
+
+             <!--EMAILI SISESTUS AKEN MATERJALID: https://www.w3schools.com/howto/howto_js_popup_form.asp-->
+             <div class="form-popup" id="emailPopUp">
+                <form action="#" class="form-container">
+                    <h1>Saadke meile sõnum</h1>
+                    <input type="text" placeholder="Sisestage Email!" name="email" required >
+                    <input type="text" placeholder="Sisestage Nimi!" name="name" required>
+
+                    <textarea rows="20" cols="30" name="message" id="message"></textarea>
+
+                    <button class="btn cancel" onclick="closeForm()">Saada!</button>
+                    <button class="btn cancel" onclick="closeForm()">Sule</button>
+                </form>
+            </div>
+
+            <!--POUPLAARSED TOOTED-->
+            <div class="more_products">
+                <h1>Populaarsed tooted</h1>
+                <div class="outbox">
+                    <div class="innerbox">
+                        <img src="./PICTURES/P1.png" alt="Phone1">
+                        <h3>IPhone 7</h3>
+                        <button onclick="window.location.href='Iphone.html'">Vaata toodet!</button>
+                        <h3><span class="checked">★</span><span class="checked">★</span><span class="checked">★</span><span class="unchecked">★</span><span class="unchecked">★</span></h3>
+                    </div>
+                </div>
+
+                <div class="outbox">
+                    <div class="innerbox">
+                        <img src="./PICTURES/IphoneXS.png" alt="Phone2">
+                        <h3>IPhone XS</h3>
+                        <button onclick="window.location.href='Iphone.html'">Vaata toodet!</button>
+                        <h3><span class="checked">★</span><span class="checked">★</span><span class="checked">★</span><span class="checked">★</span><span class="unchecked">★</span></h3>
+                    </div>
+                </div>
+
+                <div class="outbox">
+                    <div class="innerbox">
+                        <img src="./PICTURES/Iphone8.png" alt="Phone3">
+                        <h3>IPhone 8</h3>
+                        <button onclick="window.location.href='Iphone.html'">Vaata toodet!</button>
+                        <h3><span class="checked">★</span><span class="checked">★</span><span class="checked">★</span><span class="checked">★</span><span class="unchecked">★</span></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--ALUMINE NAVIGATSIOONI RIBA-->
+        <div class="bot-navigation">
+            <div><p></p></div>
+            <div><p></p></div>
+
+            <div>
+                <a onclick="openForm()"><img src="./PICTURES/email.png" alt="Email-Icon"></a>
+            </div>
+            
+        </div>
+
+    </body>
+
+</html>

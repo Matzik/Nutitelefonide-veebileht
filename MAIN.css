@@ -1,0 +1,325 @@
+body{
+    margin: 0;
+    font-size: 25px;
+    min-width:1200px;
+    font-family: 'Quicksand';
+}
+
+/* ÜLEMINE NAVIGATSIOONI RIBA CSS */
+.third-level-top-navigation{
+    position: absolute;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+}
+
+.third-level-top-navigation > li {
+    height: 60px;
+    background: #333;
+    text-align: center;
+}
+
+.third-level-top-navigation > li:hover { 
+    background: #000000; 
+}
+
+.second-level-top-navigation {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 200px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+}
+
+.second-level-top-navigation > li {
+    position: relative;
+    text-align: center;
+    height: 60px;
+    background: #333;
+}
+
+.second-level-top-navigation > li:hover { 
+    background: #000000; 
+}
+
+.first-level-top-navigation {
+    list-style: none;
+    padding: 0;
+    margin-top: 0;
+    margin: 0;
+}
+
+.first-level-top-navigation a  {   
+    color: #FFFFFF;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    line-height: 60px;
+}
+
+.first-level-top-navigation > li {
+    position: relative;
+    float: left;
+    height: 60px;
+    width: 200px;
+    background: #333;
+}
+
+.first-level-top-navigation > li:hover {
+    background: #000000; 
+}
+
+.first-level-top-navigation li:hover > ul {
+    display: inline-block;
+}
+
+.first-level-top-navigation a:hover { 
+    color: #FFFFFF; 
+}
+
+.top-navigation {
+    opacity: 0.9;
+    background-color: #333;
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    margin-top: 0px ;
+    list-style: none;
+    z-index: 5;
+}
+
+ /* LEHE SISU KONTEINER */
+.main_content{
+    padding-top: 40px;
+}
+
+.main_content h1{
+    text-align: center;
+    border-radius: 25px;
+}
+
+.main_content p{
+    text-align: center;
+    text-align: justify;
+    padding-right: 200px;
+    padding-left: 200px;
+    padding-bottom: 50px;
+}
+
+#aboutText{
+    text-align: center;
+    border-radius: 25px;
+    padding: 20px;
+    margin: 150px;
+    margin-top: 10px;
+    background-color: rgb(235, 235, 235);
+}
+
+#more {
+    display: none;
+}
+#roundedButton{
+    background-color: #333;
+    border: none;
+    color: white;
+    border-radius: 25px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+.innerbox button{
+    background-color: #333;
+    border: none;
+    color: white;
+    border-radius: 25px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+/* PILDI KONTEINER KASUTATUD MATERJALID: https://www.w3schools.com/howto/howto_js_slideshow.asp */
+.picture-container {
+    width: 100%;
+    position: relative;
+    margin-top: 20px;
+}
+  
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+  
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+  
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+  
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    margin-bottom: 60px;
+}
+  
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* POPULAARSED PRODUKTID */
+
+.more_products{
+    text-align: center; 
+    margin-bottom: 1000px;
+}
+
+.outbox{
+    float:left; 
+    width: 26%; 
+    margin-left: 100px;
+    text-align: center;
+}
+
+.innerbox{
+    min-width: 30%;
+    padding: 15px; 
+    border-radius: 25px; 
+    margin-right: 5px;
+    margin-left: 5px; 
+    background-color: rgb(235, 235, 235);
+}
+.innerbox img{
+    width: 300px; height: 300px; margin-top: 30px;
+}
+
+.outbox p{
+    text-align: center;
+}
+
+.unchecked{
+    color: #717171;
+}
+
+.checked{
+    color: #000000;
+}
+
+/* ALUMINE NAVIGATSIOONI RIBA CSS */
+.bot-navigation {
+    opacity: 0.9;
+    background-color: #333; 
+    position: fixed;width: 100%; 
+    bottom: 0; 
+    margin: 0; 
+    text-align: center;
+}
+
+.bot-navigation div{
+    text-align: center;
+    color: #FFFFFF;
+    float: left;
+    width: 33.3%;
+}
+
+.bot-navigation p{
+    text-align: center;
+}
+
+.bot-navigation img{
+    width: 50px;
+    height: 50px;
+    float: right; 
+    margin-right: 20px; 
+    padding: 10px;
+}
+
+/* EMAIL SAATMISE AKEN KASUTATUD MATERJALID: https://www.w3schools.com/howto/howto_js_popup_form.asp*/
+
+.open-button {
+    background-color: #555;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 280px;
+}
+.form-popup {
+    display: none;
+    position: fixed;
+    width: 500px;
+    bottom: 0;
+    right: 15px;
+    z-index: 9;
+}
+
+.form-container {
+    text-align: center;
+    opacity: 0.9;
+    background-color: whitesmoke;
+    padding: 10px;
+    border-radius: 25px;
+}
+  
+.form-container input[type=text] {
+    width: 400px;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+textarea{
+    resize: none;
+    width: 90%;
+}
+
+.form-container .btn {
+    background-color: #333;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    border-radius: 25px;
+    margin-bottom:10px;
+}
+.form-container .cancel {
+    background-color: #333;
+}
+  
+
+
+
+
+
+
