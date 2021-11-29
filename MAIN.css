@@ -1,10 +1,10 @@
-
 body{
     margin: 0;
     font-size: 25px;
     min-width:1200px;
     font-family: 'Quicksand';
 }
+
 /* ÜLEMINE NAVIGATSIOONI RIBA CSS */
 .third-level-top-navigation{
     position: absolute;
@@ -85,29 +85,64 @@ body{
 }
 
 .top-navigation {
-    background-color: #333;position: fixed; width: 100%; height: 60px;margin-top: 0px ; list-style: none;
+    opacity: 0.9;
+    background-color: #333;
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    margin-top: 0px ;
+    list-style: none;
     z-index: 5;
 }
+
  /* LEHE SISU KONTEINER */
 .main_content{
     padding-top: 40px;
 }
+
 .main_content h1{
     text-align: center;
+    border-radius: 25px;
 }
+
 .main_content p{
     text-align: center;
     text-align: justify;
     padding-right: 200px;
     padding-left: 200px;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
+}
+
+#aboutText{
+    text-align: center;
+    border-radius: 25px;
+    padding: 20px;
+    margin: 150px;
+    margin-top: 10px;
+    background-color: rgb(235, 235, 235);
+}
+
+#more {
+    display: none;
+}
+
+#roundedButton{
+    background-color: #333;
+    border: none;
+    color: white;
+    border-radius: 25px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
 }
 /* PILDI KONTEINER KASUTATUD MATERJALID: https://www.w3schools.com/howto/howto_js_slideshow.asp */
 .picture-container {
     width: 100%;
     position: relative;
     margin-top: 20px;
-  }
+}
   
 .prev, .next {
     cursor: pointer;
@@ -153,30 +188,41 @@ body{
 
 .more_products{
     text-align: center; 
-    padding-bottom: 1000px;
-}
-.more_products button{
-    background-color: #333;
-    border: none;
-    color: white;
-    border-radius: 25px;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
+    margin-bottom: 1000px;
 }
 
 .outbox{
-    float:left; width: 26%; margin-left: 100px;
+    float:left; 
+    width: 26%; 
+    margin-left: 100px;
+    text-align: center;
 }
+
 .innerbox{
-    min-width: 30%;padding: 15px; border-radius: 25px; margin-right: 5px;margin-left: 5px; 
+    min-width: 30%;
+    padding: 15px; 
+    border-radius: 25px; 
+    margin-right: 5px;
+    margin-left: 5px; 
+    background-color: rgb(235, 235, 235);
+}
+
+.unchecked{
+    color: #717171;
+}
+
+.checked{
+    color: #000000;
 }
 
 /* ALUMINE NAVIGATSIOONI RIBA CSS */
 .bot-navigation {
-    background-color: #333; position: fixed;width: 100%; bottom: 0; margin: 0; text-align: center;
+    opacity: 0.9;
+    background-color: #333; 
+    position: fixed;width: 100%; 
+    bottom: 0; 
+    margin: 0; 
+    text-align: center;
 }
 
 .bot-navigation div{
@@ -185,9 +231,11 @@ body{
     float: left;
     width: 33.3%;
 }
+
 .bot-navigation p{
     text-align: center;
 }
+
 .bot-navigation img{
     width: 50px;
     height: 50px;
@@ -195,3 +243,66 @@ body{
     margin-right: 20px; 
     padding: 10px;
 }
+
+/* EMAIL SAATMISE AKEN KASUTATUD MATERJALID: https://www.w3schools.com/howto/howto_js_popup_form.asp*/
+
+.open-button {
+    background-color: #555;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 280px;
+}
+.form-popup {
+    display: none;
+    position: fixed;
+    width: 500px;
+    bottom: 0;
+    right: 15px;
+    z-index: 9;
+}
+
+.form-container {
+    text-align: center;
+    opacity: 0.9;
+    background-color: whitesmoke;
+    padding: 10px;
+    border-radius: 25px;
+}
+  
+.form-container input[type=text] {
+    width: 400px;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+textarea{
+    resize: none;
+    width: 90%;
+}
+
+.form-container .btn {
+    background-color: #333;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    border-radius: 25px;
+    margin-bottom:10px;
+}
+.form-container .cancel {
+    background-color: #333;
+}
+  
+
+
+
+
+
+

@@ -1,4 +1,20 @@
-
+// Loe rohkem nupp
+function readMore() {
+    var dots = document.getElementById("dots");
+    var moreText = document.getElementById("more");
+    var btnText = document.getElementById("roundedButton");
+  
+    if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      btnText.innerHTML = "Loe Rohkem!";
+      moreText.style.display = "none";
+    } else {
+      dots.style.display = "none";
+      btnText.innerHTML = "Loe Vähem!";
+      moreText.style.display = "inline";
+    }
+}
+// Reklaamid
 var imageIndex = 0;
 showImages();
 var images,dots;
@@ -57,3 +73,14 @@ function currentImage(index) {
     images[index-1].style.display = "block";  
     dots[index-1].className += " active";
 }
+
+
+// Email sisestusaken
+function openForm() {
+    document.getElementById("emailPopUp").style.display = "block";
+}
+  
+function closeForm() {
+    document.getElementById("emailPopUp").style.display = "none";
+}
+
