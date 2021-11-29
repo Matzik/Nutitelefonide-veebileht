@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Nutitelefonide Veebileht</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="./MAIN.css">
+        <script src="MAIN.JS"></script>
+    </head>
+    <body>
+
+        <!--PEALMINE NAVIGATSIOONI RIBA-->
+        <div class="top-navigation">
+            <ul class="first-level-top-navigation">
+                <li><a href="MAIN.html">Koduleht</a></li>
+                <li><a href="#">IPhone</a>
+                    <ul class="second-level-top-navigation">
+                        <li><a href="Iphone.html">IPhone 7</a></li>
+                        <li><a href="Iphone.html">IPhone 8</a></li>
+                        <li><a href="Iphone.html">IPhone XS</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Android</a>
+                    <ul class="second-level-top-navigation">
+                        <li>
+                            <a href="#">Xiaomi</a>
+                            <ul class="third-level-top-navigation">
+                                <li><a href="Android.html">Xiaomi Mi 11</a></li>
+                                <li><a href="Android.html">Xiaomi Mi 11</a></li>
+                                <li><a href="Android.html">Xiaomi Mi 11</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="Kontakt.html">Kontaktid</a></li>
+            </ul>
+        </div>
+
+        <!--LEHE KESKMINE-->
+        <div class="main_content">
+
+            <!--EMAILI SISESTUS AKEN MATERJALID: https://www.w3schools.com/howto/howto_js_popup_form.asp-->
+            <div class="form-popup" id="emailPopUp">
+                <form action="#" class="form-container">
+                    <h1>Saadke meile sõnum</h1>
+                    <input type="text" placeholder="Sisestage Email!" name="email" required >
+                    <input type="text" placeholder="Sisestage Nimi!" name="name" required>
+
+                    <textarea rows="20" cols="30" name="message" id="message"></textarea>
+
+                    <button class="btn cancel" onclick="closeForm()">Saada!</button>
+                    <button class="btn cancel" onclick="closeForm()">Sule</button>
+                </form>
+            </div>
+    
+            <!--TELEFONID-->
+            <div class="more_products">
+                <h1>Apple telefonid</h1>
+                <div class="outbox">
+                    <div class="innerbox">
+                        <img src="./PICTURES/IphoneXS.png" style="width: 300px; height: 300px;margin-top: 30px;" alt="Phone1">
+                        <h3>IPhone XS</h3>
+                        <p>SPECS:</p>
+                        <p>399.99€</p>
+                        <button onclick="window.location.href='https://www.youtube.com/watch?v=y-7OaL_uw_k'">Osta kohe!</button>
+                        
+                    </div>
+                </div>
+
+                <div class="outbox">
+                    <div class="innerbox">
+                        <img src="./PICTURES/P1.png" style="width: 300px; height: 300px; margin-top: 30px;" alt="Phone2">
+                        <h3>IPhone 7</h3>
+                        <p>SPECS:</p>
+                        <p>199.99€</p>
+                        <button onclick="window.location.href='https://www.youtube.com/watch?v=y-7OaL_uw_k'">Osta kohe!</button>
+                       
+                    </div>
+                </div>
+
+                <div class="outbox">
+                    <div class="innerbox">
+                        <img src="./PICTURES/Iphone8.png" style="width: 300px; height: 300px; margin-top: 30px;" alt="Phone3">
+                        <h3>IPhone 8</h3>
+                        <p>SPECS:</p>
+                        <p>299.99€</p>
+                        <button onclick="window.location.href='https://www.youtube.com/watch?v=y-7OaL_uw_k'">Osta kohe!</button>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--ALUMINE NAVIGATSIOONI RIBA-->
+        <div class="bot-navigation">
+            <div><p></p></div>
+            <div><p></p></div>
+
+            <div>
+                <a onclick="openForm()"><img src="./PICTURES/email.png" alt="Email-Icon"></a>
+            </div>
+            
+        </div>
+
+    </body>
+
+</html>
