@@ -74,7 +74,6 @@ function currentImage(index) {
     dots[index-1].className += " active";
 }
 
-
 // Email sisestusaken
 function openForm() {
     document.getElementById("emailPopUp").style.display = "block";
